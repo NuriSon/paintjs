@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css"
-    <title>PaintJS</title>
-</head>
-<body>
-    <script src="app.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<title>PaintJS</title>
+	</head>
+	<body>
+		<!-- js 사용시 id, css 작업할 땐 class 사용할거임 -->
+		<canvas id="jsCanvas" class="canvas"></canvas>
+		<div class="controls">
+			<div class="controls_colors" id="jsColors">
+				<div class="controls_color" style="background-color: salmon;"></div>
+				<div class="controls_color" style="background-color: wheat;"></div>
+				<div class="controls_color" style="background-color: rosybrown;"></div>
+				<div class="controls_color" style="background-color: tomato;"></div>
+				<div class="controls_color" style="background-color: indigo;"></div>
+				<div class="controls_color" style="background-color: seagreen;"></div>
+				<div class="controls_color" style="background-color: darkorange;"></div>
+				<div class="controls_color" style="background-color: cadetblue;"></div>
+				<div class="controls_color" style="background-color: thistle;"></div>
+			</div>
+		</div>
+		<script src="app.js"></script>
+	</body>
 </html>
