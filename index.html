@@ -3,23 +3,53 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<link rel="stylesheet" href="styles.css" />
-		<title>PaintJS</title>
+		<link
+			rel="shortcut icon"
+			href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn1.iconfinder.com%2Fdata%2Ficons%2Fhawcons%2F32%2F700175-icon-1-cloud-512.png&f=1&nofb=1"
+		/>
+
+		<title>DRAW YOUR MIND</title>
 	</head>
 	<body>
 		<!-- js 사용시 id, css 작업할 땐 class 사용할거임 -->
 		<canvas id="jsCanvas" class="canvas"></canvas>
+		<!-- <figure>
+			<figcaption>In case you need some inspiration from music</figcaption>
+			<audio
+				controls
+				src="file:///C:/Users/sonnu/Desktop/die-welt-000/Nuri%20Son.mp3"
+			></audio>
+		</figure> -->
 		<div class="controls">
-			<div class="controls_colors" id="jsColors">
-				<div class="controls_color" style="background-color: salmon;"></div>
-				<div class="controls_color" style="background-color: wheat;"></div>
-				<div class="controls_color" style="background-color: rosybrown;"></div>
-				<div class="controls_color" style="background-color: tomato;"></div>
-				<div class="controls_color" style="background-color: indigo;"></div>
-				<div class="controls_color" style="background-color: seagreen;"></div>
-				<div class="controls_color" style="background-color: darkorange;"></div>
-				<div class="controls_color" style="background-color: cadetblue;"></div>
-				<div class="controls_color" style="background-color: thistle;"></div>
+			<div class="controls__range">
+				<input
+					type="range"
+					id="jsRange"
+					min="0.1"
+					max="5.0"
+					value="2.5"
+					step="0.1"
+				/>
+			</div>
+			<div class="controls__colors" id="jsColors">
+				<div class="controls__color" style="background-color: salmon;"></div>
+				<div class="controls__color" style="background-color: wheat;"></div>
+				<div class="controls__color" style="background-color: rosybrown;"></div>
+				<div class="controls__color" style="background-color: tomato;"></div>
+				<div class="controls__color" style="background-color: indigo;"></div>
+				<div class="controls__color" style="background-color: seagreen;"></div>
+				<div
+					class="controls__color"
+					style="background-color: darkorange;"
+				></div>
+				<div class="controls__color" style="background-color: cadetblue;"></div>
+				<div class="controls__color" style="background-color: thistle;"></div>
+			</div>
+			<div class="controls__btns">
+				<button id="jsMode">Fill</button>
+				<button id="jsSave">Save</button>
 			</div>
 		</div>
 		<script src="app.js"></script>
