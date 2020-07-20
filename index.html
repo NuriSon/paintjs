@@ -15,13 +15,15 @@
 	<body>
 		<!-- js 사용시 id, css 작업할 땐 class 사용할거임 -->
 		<canvas id="jsCanvas" class="canvas"></canvas>
-		<!-- <figure>
+
+		<figure>
 			<figcaption>In case you need some inspiration from music</figcaption>
 			<audio
 				controls
 				src="file:///C:/Users/sonnu/Desktop/die-welt-000/Nuri%20Son.mp3"
 			></audio>
-		</figure> -->
+		</figure>
+
 		<div class="controls">
 			<div class="controls__range">
 				<input
@@ -34,18 +36,42 @@
 				/>
 			</div>
 			<div class="controls__colors" id="jsColors">
-				<div class="controls__color" style="background-color: salmon;"></div>
-				<div class="controls__color" style="background-color: wheat;"></div>
-				<div class="controls__color" style="background-color: rosybrown;"></div>
-				<div class="controls__color" style="background-color: tomato;"></div>
-				<div class="controls__color" style="background-color: indigo;"></div>
-				<div class="controls__color" style="background-color: seagreen;"></div>
 				<div
-					class="controls__color"
+					class="controls__color jsColor"
+					style="background-color: rosybrown;"
+				></div>
+				<div
+					class="controls__color jsColor"
+					style="background-color: salmon;"
+				></div>
+				<div
+					class="controls__color jsColor"
+					style="background-color: wheat;"
+				></div>
+				<div
+					class="controls__color jsColor"
+					style="background-color: tomato;"
+				></div>
+				<div
+					class="controls__color jsColor"
+					style="background-color: indigo;"
+				></div>
+				<div
+					class="controls__color jsColor"
+					style="background-color: seagreen;"
+				></div>
+				<div
+					class="controls__color jsColor"
 					style="background-color: darkorange;"
 				></div>
-				<div class="controls__color" style="background-color: cadetblue;"></div>
-				<div class="controls__color" style="background-color: thistle;"></div>
+				<div
+					class="controls__color jsColor"
+					style="background-color: cadetblue;"
+				></div>
+				<div
+					class="controls__color jsColor"
+					style="background-color: thistle;"
+				></div>
 			</div>
 			<div class="controls__btns">
 				<button id="jsMode">Fill</button>
